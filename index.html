@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>D3 Lab</title>
+		<link rel="stylesheet" href="index.css">
+		<script type="text/javascript" src="d3/d3.js"></script>
+		<!-- <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script> -->
+	</head>
+
+	<body class="bodyCSS">
+		<h2>FIFA 18 Top 250 Players List</h2>
+		<div>
+			<label for="cars">Choose Visualizations:</label>
+
+			<select id="cars" style="overflow-x: hidden;"
+				oninput="valueChange(this.value)">
+				<option value="0" selected="selected"> Number of Players by Nationality </option>
+				<option value="1"> Number of Players by Position </option>
+				<option value="2"> Number of Players by League </option>
+				<option value="3"> Number of Players by Clubs </option>
+				<option value="4"> Number of Players by Ratings </option>
+				<option value="5"> Number of Players by Workrate </option>
+				<option value="6"> Number of Players by International Reputation </option>
+				<!-- <option value="7"> Goalkeepers </option> -->
+				<option value="8"> Distribution of Players in the List by Age </option>
+				<option value="9"> Distribution of Players in the List by Wages </option>
+				<option value="10"> Distribution of Players in the List by Value </option>
+				<option value="11"> Distribution of Players in the List by Attacking </option>
+				<option value="12"> Distribution of Players in the List by Defending </option>
+				<option value="13"> Distribution of Players in the List by Pace </option>
+				<option value="14"> Distribution of Players in the List by Physicality </option>
+			</select>
+			<br><br>
+			<label id="selected"></label>
+		</div>
+		<svg id='mySvg' width="800" height="600"></svg>
+		<script type="text/javascript" src="index.js"></script>
+	</body>
+</html>
